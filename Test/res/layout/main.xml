@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:bzcat="http://schemas.android.com/apk/res/com.rga.nike.plusgps"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundcolor"
+    >
+	<com.cperes.texteffects.MirrorText
+		android:id="@+id/mirrortesttext"
+		android:layout_width="wrap_content"
+   	 	android:layout_height="wrap_content"
+   	 	android:layout_centerHorizontal = "true"
+   	 	android:layout_marginTop="100dp"
+   	 	bzcat:te_main_text = "MIRROR"
+		bzcat:te_main_textsize = "@dimen/mirrorText_mainTextSize"
+		bzcat:te_main_style = "bold"
+		bzcat:te_secondary_text = " mirror"
+		bzcat:te_secondary_textsize = "@dimen/mirrorText_secondaryTextSize"
+		bzcat:te_secondary_style = "normal"
+		bzcat:te_colortop = "@color/red"
+		bzcat:te_colorbottom = "@color/orange"
+		bzcat:te_colorbackground = "@color/backgroundcolor"
+   	 />
+   	 <View
+   	 	android:layout_width="fill_parent"
+   	 	android:layout_height="265dp"
+   	 	android:background="@color/backgroundcolor1"
+   	 	android:layout_alignParentBottom="true"/>
+   	 	
+   	 <com.cperes.texteffects.GradientText
+		android:layout_width="wrap_content"
+   	 	android:layout_height="wrap_content"
+   	 	android:layout_centerHorizontal = "true"
+   	 	android:layout_below="@id/mirrortesttext"
+   	 	android:layout_marginTop="100dp"
+   	 	bzcat:te_main_text = "GRADIENT"
+		bzcat:te_main_textsize = "@dimen/mirrorText_mainTextSize"
+		bzcat:te_main_style = "bold"
+		bzcat:te_colortop = "@color/blue"
+		bzcat:te_colorbottom = "@color/green"
+		bzcat:te_colorbackground = "@color/backgroundcolor1"
+   	 />
+	
+</RelativeLayout>

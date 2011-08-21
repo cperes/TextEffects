@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="TextEffects">
+		<attr name="te_main_text" format="string|reference"/>
+		<attr name="te_main_textsize" format="dimension|reference"/>
+		<attr name="te_main_style">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+        </attr>
+		<attr name="te_secondary_text" format="string|reference"/>
+		<attr name="te_secondary_textsize" format="dimension|reference"/>
+		<attr name="te_secondary_style">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+        </attr>
+		<attr name="te_colortop" format="color|reference"/>
+		<attr name="te_colorbottom" format="color|reference"/>
+		<attr name="te_colorbackground" format="color|reference"/>
+	</declare-styleable>
+</resources>
