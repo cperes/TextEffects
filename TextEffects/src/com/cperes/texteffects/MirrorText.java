@@ -21,15 +21,6 @@ public class MirrorText extends RelativeLayout {
 	private ImageView mirrorImage;
 	private Bitmap textBitmap;
 	private Context context;
-	private View view;
-	private int topColor;
-	private int bottomColor;
-	private float mainTextSize;
-	private float secondaryTextSize;
-	private int mainTextStyle;
-	private int secondaryTextStyle;
-	private String mainText;
-	private String secondaryText;
     
 	public MirrorText(Context context) {
 		super(context);
@@ -49,42 +40,11 @@ public class MirrorText extends RelativeLayout {
 		init(attrs);
 	}
 	
-	public void setMainText(String mainText) {
-		this.mainText = mainText;
-	}
-	public void setSecondaryText(String secondaryText) {
-		this.secondaryText = secondaryText;
-	}
-	public void setMainTextSize(int mainTextSize) {
-		this.mainTextSize = mainTextSize;
-	}
-	public void setSecondaryTextSize(int secondaryTextSize) {
-		this.secondaryTextSize = secondaryTextSize;
-	}
-	public void setMainTextStyle(int mainTextStyle) {
-		this.mainTextStyle = mainTextStyle;
-	}
-	public void setSecondaryTextStyle(int secondaryTextStyle) {
-		this.secondaryTextStyle = secondaryTextStyle;
-	}
-	public void setTopColor(int topColor) {
-		this.topColor = topColor;
-	}
-	public void setBottomColor(int bottomColor) {
-		this.bottomColor = bottomColor;
-	}
+	
 	
 	private void init(AttributeSet attrs) {
 		if(attrs!=null) {
 			TypedArray a = getContext().obtainStyledAttributes(attrs,R.styleable.TextEffects);
-			mainText = a.getString(R.styleable.TextEffects_te_main_text);
-			secondaryText = a.getString(R.styleable.TextEffects_te_secondary_text);
-			mainTextSize = a.getDimension(R.styleable.TextEffects_te_main_textsize, getResources().getDimension(R.dimen.mainTextSize));
-			secondaryTextSize = a.getDimension(R.styleable.TextEffects_te_secondary_textsize, getResources().getDimension(R.dimen.secondaryTextSize));
-			mainTextStyle = a.getInt(R.styleable.TextEffects_te_main_style, 1);
-			secondaryTextStyle = a.getInt(R.styleable.TextEffects_te_secondary_style, 0);
-			topColor = a.getColor(R.styleable.TextEffects_te_colortop, 0xFF000000);
-			bottomColor = a.getColor(R.styleable.TextEffects_te_colorbottom, 0xFF000000);
 		}
 		
 		LayoutInflater inflater = (LayoutInflater)   context.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
